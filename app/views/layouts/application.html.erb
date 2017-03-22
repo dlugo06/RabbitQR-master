@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RabbitQR | Mobile Payments</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20351006-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="header">
+	<a href="/" id="logo"></a>
+	<div id="nav">
+		<ul>
+      <% if @user %>
+        <li><%= link_to "Dashboard", user_path(@user.id) %> </li>
+        <li><%= link_to "New Card", new_payment_info_path %></li>
+        <% unless @user.payment_infos.blank? %>
+          <li><%= link_to "Profile", edit_payment_info_path(@user.payment_infos[0].object_id) %></li>
+        <% end %>
+        <li><%= link_to "Logout", logout_path %></li>
+      <% else %>
+				<li><a href="http://blog.rabbitqr.com">Blog</a></li>
+				<li><a href="/download/">Download</a></li>
+				<li><a href="/team">Team</a></li>
+				<li><%= link_to "Login", login_form_path %></li>
+      <% end %>
+		</ul>
+	</div>
+
+</div>
+
+<%= yield %>
+  <div id="footer">
+      A <a href="http://startupbus.com">StartupBus 2011</a> creation.
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://blog.rabbitqr.com">Blog</a>
+  </div>
+
+</body>
+</html>

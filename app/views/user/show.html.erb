@@ -1,0 +1,28 @@
+<div id="content">
+	
+	<div id="recent">
+		<h2>Payments</h2>
+		<table class="left">
+			<caption>Sent<caption>
+			<tr><th>Name</th><th>Amount</th></tr>
+      <% @sent.each do |transaction| %>
+        <tr>
+          <% u = User.find(transaction.receiver_id) %>
+          <td><%= u.username %></td>
+          <td><%= transaction.amount %></td>
+        </tr>
+      <% end %>
+		</table>
+		<table class="left">
+			<caption>Received<caption>
+			<tr><th>Name</th><th>Amount</th></tr>
+      <% @received.each do |transaction| %>
+        <tr>
+          <td><%= transaction.receiver_id %></td>
+          <td><%= transaction.amount %></td>
+        </tr>
+      <% end %>
+		</table>
+	</div>
+	
+</div>

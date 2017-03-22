@@ -1,0 +1,194 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  	margin:0px;
+  	padding:0px;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: Myriad Pro, Arial, sans-serif;
+}
+
+iframe {
+  margin-top: 2em;
+  margin-left: 7.2em;
+}
+
+.step{
+  display: block;
+  float: left;
+  margin: 0 30px;
+  height: 426px;
+  width: 225px;
+}
+
+img{
+  float: left;
+}
+
+#one{
+  padding: 30px;
+  width: 238px;
+}
+
+body {
+  background: url('/images/pattern.png');
+  color: #333333;
+}
+
+#body {
+  overflow: hidden;
+  width: 900px;
+  margin: 0 auto;
+}
+
+#body h1{
+  color: #444444;
+  text-shadow: 1px 1px 2px #cccccc;
+  border-bottom: 1px dashed #cccccc;
+}
+
+#web {
+  background: #ffffff;
+  margin: 50px auto;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+#mobile {
+  background: #ffffff;
+  margin: 0 auto;
+  margin-bottom: -1em;
+  padding: 1em;
+  overflow: hidden;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+#footer{
+  padding: 10px;
+  background: #ffffff;
+  text-align: center;
+	border-top: 10px solid #d1e2ea;
+  margin-top: 3em;
+}
+
+form {
+  background: #ffffff;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#logo {
+	display: block;
+	width: 258px;
+	height: 56px;
+	background: url('/images/rabbitqr.png');
+	float: left;
+	margin: 10px;
+}
+
+#content{
+	padding: 20px;
+}
+
+#header{
+  margin-bottom: 1.5em;
+}
+#recent{
+	padding: 20px;
+	border: 1px solid #cccccc;
+	overflow: hidden;
+	margin: 0 auto;
+	min-width: 300px;
+  background: #ffffff;
+}
+
+#header li a{
+	display: block;
+	color: #333;
+	padding: 7px;
+	border: 1px solid #ccc;
+  background: #ffffff;
+}
+
+#header li a:hover{
+	border-top: 5px solid #cccccc;
+}
+
+#header{
+	height: 80px;
+	border-bottom: 10px solid #d1e2ea;
+  background: #ffffff;
+}
+/*
+.notice{
+  width: 200px;
+  margin: auto auto;
+  color: green;
+}*/
+
+#nav ul {
+	float: right;
+	margin-top: 20px;
+}
+
+#nav li {
+	float: left;
+	margin: 0px 20px;
+}
+
+table {
+	width: 200px;
+	border: 1px solid #cccccc;
+	margin: 10px;
+}
+
+caption{
+	text-align: left;
+}
+
+th {
+	background:#cccccc;
+	padding: 10px;
+}
+td {
+	padding: 3px;
+	border: 1px solid #cccccc;
+}
+.right{
+	float: right;
+}
+.left {
+	float: left;
+}
+
+/* Copied and pasted from https://isabelcastillo.com/error-info-messages-css */
+
+.isa_info, .isa_success, .isa_warning, .isa_error {
+  width: 220px;
+  margin: 10px auto;
+  display: block;
+}
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.isa_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.isa_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+    margin:5px 10px;
+    font-size:1em;
+    vertical-align:middle;
+}
