@@ -6,6 +6,14 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
+module Rails
+  class Railtie
+    def self.instance
+      @instance ||= new
+    end
+  end
+end
+
 module QRPay
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

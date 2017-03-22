@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'rails', '3.0.3'
 gem 'authorize-net'
 gem 'twiliolib'
@@ -11,6 +12,7 @@ gem 'rake', '~>0.8'
 
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'pg'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
